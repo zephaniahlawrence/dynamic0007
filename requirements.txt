@@ -3,3 +3,4 @@ Flask-Session
 Flask_Login
 Flask_Cors
 Python_Dotenv
+gunicorn
