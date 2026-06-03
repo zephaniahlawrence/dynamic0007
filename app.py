@@ -12,7 +12,6 @@ from dotenv import load_dotenv
 from werkzeug.utils import secure_filename
 from datetime import timedelta
 import json
-from sent_dm import Sent
 
 
 load_dotenv()
