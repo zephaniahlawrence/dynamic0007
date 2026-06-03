@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <title>Premium Beauty Services and Treatments at Faithfully Lashed Studio</title>
+        <meta name="description" content="Explore our beauty services including lash extensions and exclusive VIP memberships for all your beauty treatments needs."/>
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+        <!-- Include jQuery library from a CDN -->
+        <script src="https://code.jquery.com"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <link rel="icon" href="{{ url_for('static', filename='images/fl-logo-nobg.png') }}" type="image/png">
+
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+        <script src="{{ url_for('static', filename='js/newscripts(finalized).js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/messengerscript.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/transitionscript.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/reviewscript.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/formscript.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/closescript.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/searchscript.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/highlightscript.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/accountformscript.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/registerscript.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/signinscript.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/profilescript.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/fetchsessionscript.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/updatecartscript.js') }}" defer></script>
+        <!-- <script src="{{ url_for('static', filename='js/signoutscript.js') }}" defer></script> -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    </head>
+
+
+    <body>
+
+        <img class="titleimage banner" src="{{ url_for('static', filename='images/fl-banner-cropped3 .jpeg') }}" width="104%" height="100%" style="border:2px none red; margin-left:-2%; margin-top:-9px">
+        <div class="bannerpad"><br><br><br><br><br><br><br></div>
+
+        <header style="position:sticky;top:0px;z-index:1000; border:2px none #B76E79; border-radius:11px; z-index:1000;">
+
+            <div id="header" class="navcontainer reveal" data-direction="top">
+
+                <div class="subgrida" style="grid-area:navigation">
+
+                    <div class="navgriditem homebtn" style="grid-area:home">
+                        <a href="{{ url_for('index') }}">
+                            <h1 class="navhover underline-animation">
+                            💕 HOME
+                            </h1>
+                        </a>
+                    </div>
+
+                    <div class="navgriditem servicesbtn" style="grid-area:services">
+                        <a href="{{ url_for('services') }}">
+                            <h1 class="navhover underline-animation">
+                                SERVICES
+                            </h1>
+                        </a>
+                    </div>
+
+                    <div class="navgriditem membershipsbtn" style="grid-area:memberships;">
+                        <a href="memberships.html">
+                            <h1 class="navhover underline-animation">
+                                MEMBERSHIPS
+                            </h1>
+                        </a>
+                    </div>
+
+                    <div class="navgriditem faqsbtn" style="grid-area:faqs">
+                        <a href="faqs.html">
+                            <h1 class="navhover underline-animation">
+                                FAQs
+                            </h1>
+                        </a>
+                    </div>
+
+                    <button class="navgriditem more1 morebtn" style="grid-area:more; display:flex;">
+                        <h1 class="navhover">
+                            MORE&nbsp;
+                            <svg class="arrow" style="vertical-align:-14%;" width="1.2rem" height="1.2rem" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="currentColor"/>
+                            </svg>
+                        </h1>
+                    </button>
+                    <div class="more2" style="z-index:1001">
+                        <a href="contact.html"><h1 class="navhover">CONTACT US</h1></a>
+                        <a href="memberships.html"><h1 class="navhover">MEMBERSHIPS</h1></a>
+                        <a href="reviews.html"><h1 class="navhover">TESTIMONIALS</h1></a>
+                        <a href="gallery.html"><h1 class="navhover">GALLERY</h1></a>
+                        <a href="services(finalized).html"><h1 class="navhover">SHOP</h1></a>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="subgridb" style="grid-area:tools;margin-left:11px;z-index:1000">
+
+                    <div popovertarget="dashboard" id="dashboardbtn" class="dashboardbtn toolgriditem navhover" style="grid-area:subgridb-item-1; display:none; width:fit-content; margin:0px; padding:0px; justify-self:center; justify-items:center; justify-content:center; text-align:center; background:transparent; border:2px none red; box-shadow: none;"></div>
+
+                    <div popovertarget="account" id="accountbtn" class="toolgriditem navhover accountswitch" style="grid-area:subgridb-item-1">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="2rem" height="2rem" data-ux="UtilitiesMenuIcon" data-typography="NavAlpha" class="x-el x-el-svg c2-1b c2-1c c2-4d c2-y c2-7w c2-7x c2-1g c2-10 c2-11 c2-12 c2-13 c2-1d c2-1h c2-m c2-1e c2-4 c2-1f c2-14 c2-15 c2-w c2-5 c2-6 c2-7 c2-8">
+                            <path fill-rule="evenodd" d="M5.643 19.241a.782.782 0 0 1-.634-.889c.317-2.142 1.62-4.188 3.525-5.244l.459-.254-.39-.352a4.89 4.89 0 0 1-.797-6.327 4.747 4.747 0 0 1 2.752-2.003 4.894 4.894 0 0 1 6.092 5.72c-.211 1.042-.802 1.97-1.59 2.683l-.308.28.459.253c1.876 1.04 3.185 3.131 3.53 5.26a.765.765 0 0 1-.742.883c-.367.005-.697-.25-.753-.613-.52-3.384-4.067-6.087-7.702-4.324-1.628.79-2.714 2.511-3.014 4.313a.76.76 0 0 1-.887.614zm2.873-10.36a3.36 3.36 0 0 0 3.356 3.355A3.36 3.36 0 0 0 15.23 8.88a3.361 3.361 0 0 0-3.358-3.357A3.36 3.36 0 0 0 8.516 8.88z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <div class="toolgriditem navhover" style="grid-area:subgridb-item-2; border:2px none red;">
+                        <a href="{{ url_for('cart') }}">
+                            <svg viewBox="115.712 115.712 297.6 299.6" xmlns="http://www.w3.org/2000/svg" width="1.4rem" height="1.4rem" stroke-width=".7rem">
+                                <title>Shopping_Cart</title>
+                                <g data-name="Shopping Cart" id="Shopping_Cart">
+                                    <g data-name="Shopping Cart" id="Shopping_Cart-2">
+                                        <path d="M351.9,329.5063H206.81l-3.0723-12.56H368.1614l26.63-116.019L177.5618,174.8861l-9.9526-58.0885h-50.4v21.945h31.8934l35.2332,191.2465a32.927,32.927,0,1,0,36.3628,21.4622H320.9431A32.8248,32.8248,0,1,0,351.9,329.5063ZM181.4272,197.4486l186.5106,22.3589-17.2592,75.194H198.9174Z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div popovertarget="search2" class="toolgriditem navhover searchswitch" style="grid-area:subgridb-item-3;">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="2rem" height="2rem" data-ux="UtilitiesMenuIcon" data-aid="SEARCH_ICON_RENDERED" data-typography="NavAlpha" class="x-el x-el-svg c2-1b c2-1c c2-t c2-y c2-3l c2-1g c2-10 c2-11 c2-12 c2-13 c2-1d c2-m c2-1q c2-3m c2-3n c2-3o c2-1e c2-4 c2-1f c2-14 c2-15 c2-w c2-5 c2-3p c2-6 c2-7 c2-8">
+                                <path fill-rule="evenodd" d="M19.504 18.461a.76.76 0 0 1 0 1.038.652.652 0 0 1-.956 0L15.2 15.993a6.142 6.142 0 0 1-3.83 1.353C7.858 17.346 5 14.353 5 10.673 5 6.994 7.858 4 11.371 4c3.513 0 6.371 2.994 6.371 6.673a6.82 6.82 0 0 1-1.536 4.333l3.298 3.455zM6.377 10.673c0 2.884 2.24 5.231 4.994 5.231 2.754 0 4.994-2.347 4.994-5.231s-2.24-5.23-4.994-5.23c-2.754 0-4.994 2.346-4.994 5.23z">
+                                </path>
+                            </svg>
+
+                    </div>
+
+                </div>
+
+                <div class="subgrid-b2" style="grid-area:tools">
+
+                    <div popovertarget="dashboard" id="dashboardbtn2" class="dashboardbtn2 toolgriditem navhover" style="grid-area:subgridb-item-1; display:none; width:fit-content; margin:0px; padding:0px; justify-self:center; justify-items:center; justify-content:center; text-align:center; background:transparent; border:2px none red; box-shadow: none;"></div>
+
+                    <button class="toolgriditem sandwich1" style="grid-area:subgridb-item-1;">
+                        <div class="svgrotate">
+                            <svg class="navhover" viewBox="0 0 1024.00 1024.00" height="1.19rem" width="1.19rem" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" stroke-width="65.536">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0">
+                                </g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                </g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path fill="currentColor" d="M160 448a32 32 0 0 1-32-32V160.064a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32V416a32 32 0 0 1-32 32H160zm448 0a32 32 0 0 1-32-32V160.064a32 32 0 0 1 32-32h255.936a32 32 0 0 1 32 32V416a32 32 0 0 1-32 32H608zM160 896a32 32 0 0 1-32-32V608a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32v256a32 32 0 0 1-32 32H160zm448 0a32 32 0 0 1-32-32V608a32 32 0 0 1 32-32h255.936a32 32 0 0 1 32 32v256a32 32 0 0 1-32 32H608z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="sandwich2">
+                        <h1 popovertarget="account" class="navhover accountswitch2">ACCOUNT</h1>
+                        <a href="reviews.html"><h1 class="navhover">SHOP</h1></a>
+                        <h1 popovertarget="search" class="navhover searchswitch2">SEARCH</h1>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </header>
+
+        <br><br><br><br>
+
+
+        <main style="overflow-x:hidden">
+
+
+            <section class="introgrid reveal" id="section1" style="font-family: 'Nunito'">
+
+
+                <div class="reveal introgriditemb boxshadow" style="grid-area:item-1; min-height:100%; background:transparent;">
+
+
+                    <img class="imagefade-bottom(off)" src="{{ url_for('static', filename='images/headshot-transparent .png') }}" alt="headshot" style="width:100%;height:100%;object-fit:cover">
+                    <div class="reveal introgriditemc imagefade-top2(off)" data-direction="bottom" style="background: url('{{ url_for('static', filename='images/portrait1 .jpg') }}') center center / cover no-repeat; align-items:center; justify-content:center;">
+                        <div class="card reveal" data-direction="left" style="height:fit-content; max-width:640px; background-color: rgba(0, 0, 0, 0.49); color:pink; -webkit-backdrop-filter:blur(11px) saturate(.90) brightness(89%); backdrop-filter:blur(11px) saturate(.90) brightness(89%);align-self:center; justify-self:center;">
+                            <h2 style="font-family: 'Fjalla One';"><strong>Your Private Lash Escape in Nashville 🤍</strong></h2>
+
+                            <br>
+
+                            <div>
+                                <p style="text-align:justify left">Hey, babe! I'm, the owner of Faithfully Lashed, your cozy home-based lash studio in Nashville, TN.</p>
+                                <p style="text-align:justify left">I specialize in Classic, Hybrid, and Volume Lash Extensions designed to enhance your natural beauty and lifestyle.
+                                    Each set is fully customized with intention, whether you love a clean, natural look or full, fluffy glam.</p>
+                                <p style="text-align:justify left">I also offer Lash Lifts, Brow Laminations, and Brow Tinting for clients who prefer low-maintenance beauty with soft, luxury results.
+                                My goal is to give you more than just great lashes; I want every appointment to feel peaceful, personal, and confidence-boosting from start to finish.</p>
+                            </div>
+
+                            <br><br><br>
+
+                            <div>
+                                <a hred="services(finalized).html"><button class="btn" style="color:pink; border-style: solid; border-color:#B76E79; border-width:1px" onclick="document.getElementById('quickBook').click()">Book Now</button></a>
+                                <a href="services(finalized).html"><button class="btn" style="color:pink; border-style: solid; border-color:#B76E79; border-width:1px" onclick="document.getElementById('services').click()">See Services</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="reveal introgriditem boxshadow" data-direction="bottom" style="grid-area:item-2; display:grid; width:100%; background: url('{{ url_for('static', filename='images/portrait2 .jpg') }}') center center / 187% no-repeat;">
+
+
+                    <div class="card reveal" data-direction="right" style="height:fit-content; width:100%; max-width:524px; justify-self:center; background-color: rgba(0, 0, 0, 0.49); color:pink; font-weight:900; -webkit-backdrop-filter:blur(9px) saturate(.90) brightness(89%); backdrop-filter:blur(9px) saturate(.90) brightness(94%);">
+
+                        <h2 style="font-family: 'Fjalla One';">Hours & Contact</h2>
+                        <br>
+                        <div class="contact-line"><div>Mon–Fri | 8:00am - 7:00pm</div></div>
+                        <div class="contact-line"><div>Saturday | 9:00am - 5:00pm</div></div>
+                        <div class="contact-line"><div>Sunday | Closed</div></div>
+                        <div class="contact-line"><div>Major Holidays | Closed</div></div>
+                        <hr style="border:none;height:1px;background:#f2e5ee;margin:11px 0;border-radius:6px">
+                        <div style="font-weight:700">Faithfully Lashed</div>
+                        <div style="margin-top:6px;">Nashville, TN<br>(We Come To You!)<br><br>Email: info@faithfullylashedstudio.com<br>Phone: +1 (629) 400-8232</div>
+                        <div style="margin-top:50px;font-size:13px;">We're closed on major holidays. If your date falls on a major holiday the system will not allow booking and will prompt alternate dates.</div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="fitmailinglist2 reveal introgriditemb boxshadow" data-direction="left" style="grid-area:item-3; gap:0;min-height:963px;width:100%; justify-items:left;">
+
+
+                    <img src="{{ url_for('static', filename='images/mlpart1.jpeg') }}" alt="mailing list" style="width:100%;height:481px;align-self:center; justify-self:center;">
+
+                    <div class="ml-layout" style="position:relative;">
+                        <img src="{{ url_for('static', filename='images/mlpart2.jpeg') }}" alt="mailing list" style="border: 2px none red; grid-area: ml-item; display:block; width:100%; height:482px; align-self:center; justify-self:center; z-index:400">
+                        <div style="grid-area: ml-item; display:block; position:static; width:100%; height:482px; padding:2%; z-index:900; align-content:center; justify-content:center;">
+                            <div class="fitmailinglist card reveal" data-direction="bottom" style="position:static; background-color: rgba(0, 0, 0, 0.60); color:pink; padding:14px; width: 100%; height:fit-content; align-self:center; justify-self:center; -webkit-backdrop-filter:blur(9px) saturate(.90) brightness(89%); backdrop-filter:blur(7px) saturate(.90) brightness(94%); z-index:900">
+                                <!-- color:#fca4c5; color:#faa4c5 -->
+                                <h5 style="font-family: 'Fjalla One'; font-size:1.4em; text-align:left; margin:4px 4px 29px 0px;"><strong>BECOME A FAITHFULLY LASHED INSIDER 💕</strong></h5>
+                                <p><h4 style="line-height:1.04rem; margin: -4px 0px 0px 3px; text-align:left"><strong>Get exclusive offers, booking updates, and lash care tips straight to your inbox. Stay in the loop with all things lashes, beauty, and self-care.</strong></h5></p>
+                                    <p><h4 style="line-height:1.04rem;margin: -4px 0px -7px 3px; text-align:left"><strong>Sign up to receive 10% off your first service ♡</strong></h5></p>
+
+                                <form id="mlform" action="https://api.web3forms.com/submit" method="POST" style="margin-left:3px;height:fit-content;">
+                                    <input type="hidden" name="access_key" value="a07cbfdb-3324-4558-80f2-e67349af9fc8">
+                                    <input type="hidden" name="subject" value="New Submission from Web3Forms">
+                                    <input type="checkbox" name="botcheck" id="" style="display: none;">
+                                    <div class="mlgrid" style="z-index:9999">
+                                        <div class="mlgriditem profiletextinput" style="grid-area:fullname;"><h5 style="color:pink;margin-bottom:4px">Full Name</h5><input autocomplete="on" id="mlfullname" name="mlname" placeholder=" your name" type="text" style="color:black;caret-color:#B76E79;background:transparent;border:1px none #B76E79; width:47.25%;" required></div>
+                                        <div class="mlgriditem profiletextinput" style="grid-area:phonenumber"><h5 style="color:pink;margin-bottom:4px">Phone Number</h5><input autocomplete="on" id="mlphone" name="mlphone" placeholder=" your phone number" type="text" style="color:black;caret-color:#B76E79;background:transparent;border:1px none #B76E79;width:47.25%;" required></div>
+                                        <div class="mlgriditem profiletextinput" style="grid-area:email;"><h5 style="color:pink;margin-bottom:4px;">Email</h5><input autocomplete="on" id="mlemail" name="mlemail" placeholder=" your email" type="email" style="color:black;caret-color:#B76E79;background:transparent;border:1px none #B76E79;width:93.5%;" required></div>
+                                    </div>
+                                    <input type="hidden" name="redirect" value="none">
+                                    <button popovertarget="confirmation" id="mlbtn" class="btn mlbtn buttonhover" type="submit" style="color:pink;height:24%; width:fit-content;border-radius:7px;">SIGN ME UP!</button>
+                                    <!-- <div id="mlresult"></div> -->
+                                </form>
+                                <!-- <script src="formscript.js"></script> -->
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </section id="section1">
+
+
+            <br><br>
+
+
+            <section id="section2">
+
+
+                <div class="introgrid2 reveal" data-direction="top">
+
+
+                    <div style="grid-area:item-1; text-align:center;padding-bottom:11px;">
+                        <h2>LASHES, BROWS, OR FACIALS?</h2>
+                    </div>
+
+                    <div class="homepagegrid reveal" style="grid-area:item-2" data-direction="right">
+                        <div class="boxshadow homepagegriditem hover serviceclick1" style="grid-area: item-1;background: url('{{ url_for('static', filename='images/classic-fullset.jpeg') }}') 40% 52% / cover no-repeat;"><br>LASHES</div>
+                        <div class="boxshadow homepagegriditem hover serviceclick2" style="grid-area: item-2;background: url('{{ url_for('static', filename='images/deluxe-brow-treatment.webp') }}') 60% 37% / 179% no-repeat;">BROWS</div></a>
+                        <div class="boxshadow homepagegriditem hover serviceclick3" style="grid-area: item-3;background: url('{{ url_for('static', filename='images/basic-glow-facial.jpeg') }}') center center / cover no-repeat;">FACIALS</div>
+                    </div>
+
+
+                    <div style="grid-area:item-4; text-align:center; padding-bottom:11px">
+                        <h2>CHECK OUT WHAT'S POPULAR!</h2>
+                    </div>
+
+
+                    <div class="homepagegrid reveal highlight1" style="grid-area:item-3" data-direction="bottom">
+
+
+                        <div class="boxshadow homepagegriditem-b hover highlight1" style="grid-area: item-1;z-index:4">
+                            LASH LIFT & TINT
+                        </div>
+
+                        <div class="homepagegriditem" style="grid-area: item-1">
+                            <img src="{{ url_for('static', filename='images/lash-lift-tint.webp') }}" alt="headshot" style="width:107%; height:107%; object-position:center right;">
+                        </div>
+
+                        <div class="boxshadow homepagegriditem-b hover highlight2" style="grid-area: item-2;z-index:4">
+                            CLASSIC
+                        </div>
+
+                        <div class="homepagegriditem" style="grid-area: item-2;">
+                            <!-- <video autoplay muted loop playsinline height="100%" width="110%">
+                                <source src="service-videos/classic-lashes-cropped3.mp4" type="video/mp4">
+                                Your browser does not support this video.
+                            </video> -->
+                            <img src="{{ url_for('static', filename='images/classiclashes.gif') }}" height="100%" width="110%">
+                        </div>
+
+                        <div class="boxshadow homepagegriditem-b hover highlight3" style="grid-area: item-3;z-index:4">
+                            HYBRID
+                        </div>
+
+                        <div class="homepagegriditem" style="grid-area: item-3">
+                            <!-- <video autoplay muted loop playsinline height="100%" width="120%">
+                                <source src="service-videos/hybrid-lashes-cropped2.mp4" type="video/mp4">
+                                Your browser does not support this video.
+                            </video> -->
+                            <img src="{{ url_for('static', filename='images/hybridlashes.gif') }}" height="100%" width="120%">
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section id="section2">
+
+
+            <br><br>
+
+
+            <section id="section3">
+
+
+                <div class="app reveal" data-direction="top" style="font-family:'Fjalla One';width:97%; height:fit-content; padding: 24px; box-shadow:0 7px 9px rgba(2,6,23,0.4);">
+
+
+                    <div class="reviewcard reveal boxshadow(off)" data-direction="left" style="display:flex;background-color: rgba(255, 255, 255, 0.64);flex-direction:column;gap:12px;align-self:center; justify-self:center; align-content:center; justify-content:center; min-height:244px; height:100%; width:100%;">
+
+                        <h2 class="reviewh2">WHAT CLIENTS SAY &nbsp;💬💕</h2>
+                        <div class="ticker-wrap" id="tickerWrap" role="region" aria-label="Live reviews ticker">
+                            <div style="display:flex;align-items:center;">
+                                <div class="ticker" id="tickerA" aria-hidden="false"></div>
+                                <div class="ticker" id="tickerB" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                        <!-- <div class="small">Hover the ticker to pause. New reviews append to the feed immediately.</div> -->
+
+                    </div>
+
+
+                    <div class="reviewcard2 boxshadow reveal" data-direction="right" style="display:flex;background-color: rgba(255, 255, 255, 0.64);flex-direction:column;gap:9px; align-self:center; justify-self:center; height:100%; max-height:100%;width:100%; padding-bottom:4px;">
+
+                        <h2 class="reviewh2">LEAVE A REVIEW ✏️💕</h2>
+                        <form id="reviewForm" autocomplete="off">
+                            <div class="row">
+                                <label class="reviewlabel" for="name">NAME</label>
+                                <input class="reviewinput" id="name" name="name" type="text" placeholder="your name" style="min-width:19%" required />
+                            </div>
+
+                            <div class="row">
+                                <label class="reviewlabel">RATING</label>
+                                <div class="stars" id="starGroup" aria-label="Rating">
+                                    <span class="star" data-value="1" title="1 star">★</span>
+                                    <span class="star" data-value="2" title="2 stars">★</span>
+                                    <span class="star" data-value="3" title="3 stars">★</span>
+                                    <span class="star" data-value="4" title="4 stars">★</span>
+                                    <span class="star" data-value="5" title="5 stars">★</span>
+                                </div>
+                            </div>
+
+                            <div class="row" style="flex-direction:column;align-items:stretch">
+                                <label class="reviewlabel" for="comment">REVIEW</label>
+                                <textarea class="reviewtextarea" id="comment" name="comment" placeholder="share your experience..." style="caret-color:#B76E79;" required></textarea>
+                            </div>
+
+                            <div class="row" style="justify-content:space-between;align-items:center">
+                                <button type="submit" class="btn" style="color:#B76E79; margin-bottom:-19px; border-radius:7px">SUBMIT REVIEW</button>
+                                <!-- <div class="hint">Reviews feed into a continuous horizontal ticker below.</div> -->
+                            </div>
+                        </form>
+
+                        <div class="controls">
+                            <input class="reviewinput" id="speed" type="hidden" min="20" max="300" value="42"/>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- <script src="reviewscript.js"></script> -->
+
+            </section id="section3">
+
+
+            <br><br>
+
+
+            <section id="section4">
+
+
+                <div style="display:flex;align-self: center; justify-self:center; justify-content:center;width:100%;">
+                    <div class="reveal igcard" data-direction="top" style="display:flex;justify-self:center;width:97%; padding:24px; box-shadow:0 7px 9px rgba(2,6,23,0.4);">
+                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/faithfullylashedstudio/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:black; border:0; border-radius:9px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:100%; min-width:326px;padding:0; width:100%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/faithfullylashed__/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this profile on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/faithfullylashed__/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">Faithfully Lashed Studio🤍 ™️</a> (@<a href="https://www.instagram.com/faithfullylashed__/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">faithfullylashed__</a>) • Instagram photos and videos</p></div></blockquote>
+                    <script async src="//www.instagram.com/embed.js"></script>
+                    </div>
+                </div>
+
+
+            </section id="section4">
+
+
+            <br><br>
+
+
+            <section id="section5" style="margin-bottom:24px;">
+
+
+                <div class="boxshadow reveal" data-direction="left bottom" style="background-color:lavenderblush;border-radius: 11px;text-align:left; margin:0 auto;padding:24px;padding-right:42px;max-width:97%;list-style-position:inside;box-shadow:0 7px 9px rgba(2,6,23,0.4);">
+                    <h2>Cancellation Policy❗</h2>
+                    <div style="font-family: 'Nunito'">
+                        <p style="margin:0">At <strong>Faithfully Lashed</strong>, I value both your time and mine. As a solo artist, every appointment is specially reserved just for you. To ensure fairness and respect for all clients, the following cancellation policy is in place:</p>
+                        <br>
+                        <p style="margin:0"><span><strong>📅 Cancellation Notice</strong></span></p><p style="margin:0"><ul>
+                        <span><li>I kindly ask for <strong>at least 24 hours notice</strong> to cancel or reschedule your appointment.</li></span>
+                        <li>Cancellations made with less than 24 hours notice will result in <strong>loss of your $25 deposit</strong>.</li>
+                        <li>Same-day cancellations or no-shows may be charged up to <strong>50% of the full service price</strong>.</li>
+                        </ul></p><p style="margin:0"><span><strong>💬 How to Cancel</strong></span></p><p style="margin:0"><ul>
+                        <li>Cancellations must be made via text or through the booking system.</li>
+                        <li>If you’re feeling sick or experiencing an emergency, please communicate with me as soon as possible. I understand life happens, but communication is key.</li>
+                        </ul></p><p style="margin:0"><span><strong>🚫 No-Show Policy</strong></span></p><p style="margin:0"><ul>
+                        <li>No-call/no-shows will result in <strong>forfeiture of your deposit</strong> and may require full prepayment for future bookings or result in being declined future services.</li>
+                        </ul></p><p style="margin:0"><span><em>*No guests or extra company during service</em><br>
+                        </span></p><p style="margin:0"><span>By booking your appointment, you agree to this cancellation policy. Thank you for respecting my time and supporting my small business 💕</span>
+                    </div>
+                    <br>
+                </div>
+
+
+            </section id="section5">
+
+
+
+
+            <section id="hiddensection">
+                {% include 'forms.html' %}
+            </section id="hiddensection">
+
+
+        </main>
+
+
+        {% include 'footer.html' %}
+
+        {% include 'dashboard.html' %}
+
+
+    </body>
+
+
+</html>

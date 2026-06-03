@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    </head>
+
+    <body>
+        <h1>Services</h1>
+        <h1>{{ services[0].name }}</h1>
+        <br>
+        <br>
+        {% for service in services %}
+            {{ service.name }} - {{ service.time }}hr | ${{ service.price }} {{ service.note }}<br>
+            <div style="display:none;">{{ service.id }}</div>
+            <form action="{{ url_for('updatecart', serviceid=service.id) }}" method="post">
+                <button class="buttonhover" style="width:100%;color:pink; border:2px solid #B76E79; border-radius:9px; padding:9px;" type="submit">Add to Cart</button>
+            </form>
+        {% endfor %}
+
+        <h1>Your Cart</h1>
+        <table>
+        {% for item in cartitems %}
+            <tr>
+            <td>{{ item.name }}</td>
+            <td>{{ item.quantity }} x ${{ item.price }}</td>
+            <td>Subtotal: ${{ item.subtotal }}</td>
+            </tr>
+        {% endfor %}
+        </table>
+        <h3>{{ note }}</h3>
+        <h3>Total: ${{ total }}</h3>
+        <a href="{{ url_for('index') }}">Continue Shopping</a>
+        <a href="{{ url_for('clear_cart') }}">Empty Cart</a>
+    </body>
+
+</html>

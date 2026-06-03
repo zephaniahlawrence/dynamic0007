@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <title>Faithfully Lashed Studio - Available Services</title>
+        <meta name="description" content="Explore our beauty services including lash extensions and exclusive VIP memberships for all your beauty treatments needs."/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <link rel="icon" href="{{ url_for('static', filename='images/fl-logo-nobg.png') }}" type="image/png">
+
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+        <script src="{{ url_for('static', filename='js/newscripts(finalized).js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/messengerscript.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/transitionscript.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/reviewscript.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/formscript.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/closescript.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/searchscript.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/highlightscript.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/login.js') }}" defer></script>
+    </head>
+
+
+    <body>
+
+        <img class="titleimage banner" src="{{ url_for('static', filename='images/fl-banner-cropped3.jpeg') }}" width="104%" height="100%" style="border:2px none red; margin-left:-2%; margin-top:-9px">
+        <div class="bannerpad"><br><br><br><br><br><br><br></div>
+
+        <header style="position:sticky;top:0px;z-index:1000">
+
+            <div id="header" class="navcontainer reveal" data-direction="top">
+
+                <div class="subgrida" style="grid-area:navigation">
+
+                    <div class="navgriditem homebtn" style="grid-area:home">
+                        <a href="{{ url_for('index') }}">
+                            <h1 class="navhover underline-animation">
+                                HOME
+                            </h1>
+                        </a>
+                    </div>
+
+                    <div class="navgriditem servicesbtn" style="grid-area:services">
+                        <a href="{{ url_for('services') }}">
+                            <h1 class="navhover underline-animation">
+                                💕 SERVICES
+                            </h1>
+                        </a>
+                    </div>
+
+                    <div class="navgriditem membershipsbtn" style="grid-area:memberships;">
+                        <a href="memberships.html">
+                            <h1 class="navhover underline-animation">
+                                MEMBERSHIPS
+                            </h1>
+                        </a>
+                    </div>
+
+                    <div class="navgriditem faqsbtn" style="grid-area:faqs">
+                        <a href="faqs.html">
+                            <h1 class="navhover underline-animation">
+                                FAQs
+                            </h1>
+                        </a>
+                    </div>
+
+                    <button class="navgriditem more1 morebtn" style="grid-area:more; display:flex">
+                        <h1 class="navhover">
+                            MORE&nbsp;
+                            <svg class="arrow" style="vertical-align:-14%;" width="1.2rem" height="1.2rem" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="currentColor"/>
+                            </svg>
+                        </h1>
+                    </button>
+                    <div class="more2" style="z-index:1001">
+                        <a href="contact.html"><h1 class="navhover">CONTACT US</h1></a>
+                        <a href="memberships.html"><h1 class="navhover">MEMBERSHIPS</h1></a>
+                        <a href="reviews.html"><h1 class="navhover">TESTIMONIALS</h1></a>
+                        <a href="gallery.html"><h1 class="navhover">GALLERY</h1></a>
+                        <a href="services(finalized).html"><h1 class="navhover">SHOP</h1></a>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="subgridb" style="grid-area:tools;margin-left:11px;z-index:1000">
+
+                    <div popovertarget="account" class="toolgriditem navhover accountswitch" style="grid-area:subgridb-item-1">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="2rem" height="2rem" data-ux="UtilitiesMenuIcon" data-typography="NavAlpha" class="x-el x-el-svg c2-1b c2-1c c2-4d c2-y c2-7w c2-7x c2-1g c2-10 c2-11 c2-12 c2-13 c2-1d c2-1h c2-m c2-1e c2-4 c2-1f c2-14 c2-15 c2-w c2-5 c2-6 c2-7 c2-8">
+                            <path fill-rule="evenodd" d="M5.643 19.241a.782.782 0 0 1-.634-.889c.317-2.142 1.62-4.188 3.525-5.244l.459-.254-.39-.352a4.89 4.89 0 0 1-.797-6.327 4.747 4.747 0 0 1 2.752-2.003 4.894 4.894 0 0 1 6.092 5.72c-.211 1.042-.802 1.97-1.59 2.683l-.308.28.459.253c1.876 1.04 3.185 3.131 3.53 5.26a.765.765 0 0 1-.742.883c-.367.005-.697-.25-.753-.613-.52-3.384-4.067-6.087-7.702-4.324-1.628.79-2.714 2.511-3.014 4.313a.76.76 0 0 1-.887.614zm2.873-10.36a3.36 3.36 0 0 0 3.356 3.355A3.36 3.36 0 0 0 15.23 8.88a3.361 3.361 0 0 0-3.358-3.357A3.36 3.36 0 0 0 8.516 8.88z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <div class="toolgriditem navhover" style="grid-area:subgridb-item-2;">
+                        <a href="cart.html">
+                            <svg viewBox="115.712 115.712 297.6 299.6" xmlns="http://www.w3.org/2000/svg" width="1.4rem" height="1.4rem" stroke-width=".7rem">
+                                <title>Shopping_Cart</title>
+                                <g data-name="Shopping Cart" id="Shopping_Cart">
+                                    <g data-name="Shopping Cart" id="Shopping_Cart-2">
+                                        <path d="M351.9,329.5063H206.81l-3.0723-12.56H368.1614l26.63-116.019L177.5618,174.8861l-9.9526-58.0885h-50.4v21.945h31.8934l35.2332,191.2465a32.927,32.927,0,1,0,36.3628,21.4622H320.9431A32.8248,32.8248,0,1,0,351.9,329.5063ZM181.4272,197.4486l186.5106,22.3589-17.2592,75.194H198.9174Z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div popovertarget="search2" class="toolgriditem navhover searchswitch" style="grid-area:subgridb-item-3;">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="2rem" height="2rem" data-ux="UtilitiesMenuIcon" data-aid="SEARCH_ICON_RENDERED" data-typography="NavAlpha" class="x-el x-el-svg c2-1b c2-1c c2-t c2-y c2-3l c2-1g c2-10 c2-11 c2-12 c2-13 c2-1d c2-m c2-1q c2-3m c2-3n c2-3o c2-1e c2-4 c2-1f c2-14 c2-15 c2-w c2-5 c2-3p c2-6 c2-7 c2-8">
+                                <path fill-rule="evenodd" d="M19.504 18.461a.76.76 0 0 1 0 1.038.652.652 0 0 1-.956 0L15.2 15.993a6.142 6.142 0 0 1-3.83 1.353C7.858 17.346 5 14.353 5 10.673 5 6.994 7.858 4 11.371 4c3.513 0 6.371 2.994 6.371 6.673a6.82 6.82 0 0 1-1.536 4.333l3.298 3.455zM6.377 10.673c0 2.884 2.24 5.231 4.994 5.231 2.754 0 4.994-2.347 4.994-5.231s-2.24-5.23-4.994-5.23c-2.754 0-4.994 2.346-4.994 5.23z">
+                                </path>
+                            </svg>
+
+                    </div>
+
+                </div>
+
+                <div class="subgrid-b2" style="grid-area:tools">
+
+                    <button class="toolgriditem sandwich1" style="grid-area:subgridb-item-1;">
+                        <svg class="navhover" viewBox="0 0 1024.00 1024.00" height="1.19rem" width="1.19rem" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" stroke-width="65.536">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0">
+                            </g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                            </g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill="currentColor" d="M160 448a32 32 0 0 1-32-32V160.064a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32V416a32 32 0 0 1-32 32H160zm448 0a32 32 0 0 1-32-32V160.064a32 32 0 0 1 32-32h255.936a32 32 0 0 1 32 32V416a32 32 0 0 1-32 32H608zM160 896a32 32 0 0 1-32-32V608a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32v256a32 32 0 0 1-32 32H160zm448 0a32 32 0 0 1-32-32V608a32 32 0 0 1 32-32h255.936a32 32 0 0 1 32 32v256a32 32 0 0 1-32 32H608z">
+                                </path>
+                            </g>
+                        </svg>
+                    </button>
+                    <div class="sandwich2">
+                        <h1 popovertarget="account" class="navhover accountswitch2">ACCOUNT</h1>
+                        <a href="reviews.html"><h1 class="navhover">SHOP</h1></a>
+                        <h1 popovertarget="search" class="navhover searchswitch2">SEARCH</h1>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </header>
+
+        <br><br><br><br>
+
+
+
+
+
+        <main>
+
+
+            <section id="section1">
+
+
+                <h1 style="text-align:center;font-family: 'Fjalla One';font-size:2.4rem;">AVAILABLE SERVICES</h1>
+                <br><br><br>
+                <div class="card(off) reveal wrap(off)" style="background-color:lavenderblush;border-radius: 11px;text-align:left; justify-self:center; margin:0 auto;padding:24px;padding-right:42px;max-width:97%;list-style-position:inside;box-shadow:0 7px 9px rgba(2,6,23,0.4);" data-direction="right" id="services">
+                    <h3 style="margin-top:0;font-family:'Fjalla One'"><b>Your lashes, your routine, your peace 🤍</b></h3>
+                    <br>
+                    <p style="color:var(--muted);font-family: 'Nunito'">
+                        Luxurylash extensions in Nashville. Hybrid, Classic, and Volume sets by a licensed esthetician.
+                        Long-lasting retention, lash baths included for members. Book your glam at Faithfully Lashed Studio.
+                    </p>
+                    <br>
+                    <div class="accordion accordion-flush" id="accordionExample">
+                        <div class="accordion-item" style="background-color:transparent; border:none;--bs-accordion-btn-focus-box-shadow: none;">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button id="lashsection" class="accordion-button collapsed accordion-button:after" style="font-size:14px; background-image: url('{{ url_for('static', filename='oldimages/IMG_7758.jpg') }}'); background-size: cover; background-position: 45% 55%; zoom:240%; color: white; border-top-left-radius: 2px; border-top-right-radius: 2px" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Lash Services
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div id="a1" class="card" style="background-image: url('{{ url_for('static', filename='oldimages/IMG_7758.jpg') }}'); background-size: cover; background-position: center; color: white">
+                                        <h4 style="margin-top:0;font-family:'Quicksand'"><strong>Classic Full Set</strong></h4>
+                                        <p>
+                                            Enhance your natural beauty with our Classic Full Set. One lightweight lash extension is applied to each natural lash,
+                                            creating a soft, natural, and polished look that’s perfect for everyday wear. Ideal for first-time lash clients or those who prefer a subtle enhancement.
+                                        </p>
+                                        <h4 style="margin-top:0;font-family:'Quicksand'"><button class="btn" style="border-style: solid; border-color:#B76E79; border-width:1px" onclick="document.getElementById('services').click()">Classic Full Set (2hr | $100)</button></h4>
+                                    </div><br>
+                                    <div class="card" style="background-image: url('images/IMG_7758.jpg'); background-size: cover; background-position: center; color: white">
+                                        <h4 style="margin-top:0;font-family:'Quicksand'"><strong>Hybrid Full Set</strong></h4>
+                                        <p>
+                                            Get the best of both worlds with our Hybrid Full Set — a beautiful blend of classic and volume techniques. Hybrid lashes add texture, fluff, and extra fullness while still looking soft and wispy.
+                                            Perfect for clients who want more drama than classics but not as bold as full volume.
+                                        </p>
+                                        <h4 style="margin-top:0;font-family:'Quicksand'"><button class="btn" style="border-style: solid; border-color:#B76E79; border-width:1px" onclick="document.getElementById('services').click()">Hybrid Full Set (2hr | $125)</button></h4>
+                                    </div><br>
+                                    <div class="card" style="background-image: url('images/IMG_7758.jpg'); background-size: cover; background-position: center; color: white">
+                                        <h4 style="margin-top:0;font-family:'Quicksand'"><strong>Volume Full Set</strong></h4>
+                                        <p>
+                                            For the lash lovers who want bold, glamorous eyes ✨ Our Volume Full Set uses ultra-lightweight extensions in customized fans to create a fluffy, dense lash line.
+                                            Perfect for clients who want maximum fullness while keeping a soft, airy finish.
+                                        </p>
+                                        <h4 style="margin-top:0;font-family:'Quicksand'"><button class="btn" style="border-style: solid; border-color:#B76E79; border-width:1px" onclick="document.getElementById('services').click()">Volume Full Set (2hr | $135)</button></h4>
+                                    </div><br>
+                                    <div class="card" style="background-image: url('images/IMG_7758.jpg'); background-size: cover; background-position: center; color: white">
+                                        <h4 style="margin-top:0;font-family:'Quicksand'"><strong>Mega Volume Full Set</strong></h4>
+                                        <p>
+                                            Turn up the intensity with our darkest, most dramatic style. Mega Volume lashes use ultra-fine extensions to create dense, bold fans for a striking, high-impact look.
+                                            Perfect for special occasions or clients who love a show-stopping lash line every day.
+                                        </p>
+                                        <h4 style="margin-top:0;font-family:'Quicksand'"><button class="btn" style="border-style: solid; border-color:#B76E79; border-width:1px" onclick="document.getElementById('services').click()">Mega Volume Full Set (2hr | $150)</button></h4>
+                                    </div><br>
+                                    <div id="highlight1" class="card" style="background-image: url('images/IMG_7758.jpg'); background-size: cover; background-position: center; color: white">
+                                        <h4 style="margin-top:0;font-family:'Quicksand'"><strong>Lash Lift & Tint</strong></h4>
+                                        <p>
+                                            Say goodbye to curling wands and mascara. Our Lash Lift enhances your natural lashes by curling them upward, while a Tint darkens them for a bold, effortless look that lasts 6–8 weeks.
+                                            A perfect low-maintenance option.
+                                        </p>
+                                        <h4 style="margin-top:0;font-family:'Quicksand'"><button class="btn" style="border-style: solid; border-color:#B76E79; border-width:1px" onclick="document.getElementById('services').click()">Lash Lift & Tint (1hr | $85 <h7 style="text-decoration: line-through;">$100</h7>) <mark style="background-color:hotpink; border-radius: 4px; font-size:smaller">SAVE 15%</mark></button></h4>
+                                    </div><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" style="background-color:transparent; border:none">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button id="browsection" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="font-size:12px; background-image: url('{{ url_for('static', filename='oldimages/IMG_7762.PNG') }}'); background-size: 194%; background-position: 61.5% 29.5%; zoom: 242%; color: white;--bs-accordion-btn-focus-box-shadow: none;">
+                                    Brow Services
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="card" style="background-image: url('images/IMG_7762.PNG'); background-size: cover; background-position: center; color: white">
+                                        <h4 style="margin-top:0;font-family:'Quicksand'"><strong>Brow Stain</strong></h4>
+                                        <p>
+                                            Add depth and definition to your brows with our Brow Stain treatment. Longer-lasting than traditional tint,
+                                            this service enhances your natural brow color and shape, giving you a bold, filled-in look that can last up to 2 weeks on skin and 6 weeks on hair.
+                                        </p>
+                                        <h4 style="margin-top:0;font-family:'Quicksand'"><button class="btn" style="border-style: solid; border-color:#B76E79; border-width:1px" onclick="document.getElementById('services').click()">Brow Stain (20min | $60)</button></h4>
+                                    </div><br>
+                                    <div class="card" style="background-image: url('images/IMG_7762.PNG'); background-size: cover; background-position: center; color: white">
+                                        <h4 style="margin-top:0;font-family:'Quicksand'"><strong>Brow Lamination</strong></h4>
+                                        <p>
+                                            Achieve sleek, sculpted, and fluffy brows that stay in place all day. Brow lamination straightens and sets your natural brows for a fuller, more defined,
+                                            editorial finish that lasts up to 6 weeks.
+                                        </p>
+                                        <h4 style="margin-top:0;font-family:'Quicksand'"><button class="btn" style="border-style: solid; border-color:#B76E79; border-width:1px" onclick="document.getElementById('services').click()">Brow Lamination (45min | $75)</button></h4>
+                                    </div><br>
+                                    <div class="card" style="background-image: url('images/IMG_7762.PNG'); background-size: cover; background-position: center; color: white">
+                                        <h4 style="margin-top:0;font-family:'Quicksand'"><strong>Deluxe Brow Treatment</strong></h4>
+                                        <p>
+                                            The ultimate brow transformation. Our Deluxe Brow Treatment combines lamination, stain, and brow wax for perfectly lifted, tinted, and sculpted brows.
+                                            Ideal for clients who want a full, luxury brow makeover in one appointment.
+                                        </p>
+                                        <h4 style="margin-top:0;font-family:'Quicksand'"><button class="btn" style="border-style: solid; border-color:#B76E79; border-width:1px" onclick="document.getElementById('services').click()">Deluxe Brow Treament (1hr 30min | $90 <h7 style="text-decoration: line-through;">$100</h7>) <mark style="background-color:hotpink; border-radius: 4px; font-size:smaller">SAVE 25%</mark></button></h4>
+                                    </div><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" style="background-color:transparent;border:none">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button id="facialsection" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="font-size:11px; background-image: url('{{ url_for('static', filename='oldimages/a80cba05-cf98-42d9-b160-034044de65ac.png') }}'); background-size: contain; background-position: 56.5% 43.5%; zoom: 272%; color: white; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px;--bs-accordion-btn-focus-box-shadow: none;">
+                                    Facial Services
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="card" style="background-image: url('images/IMG_7762.PNG'); background-size: cover; background-position: center; color: white"></div>
+                                    <h4><strong>This is the third item's accordion body.</strong></h4>
+                                    <p>
+                                        test
+                                    </p>
+                                    <h4 style="margin-top:0;font-family:'Quicksand'"><button class="btn" style="border-style: solid; border-color:#B76E79; border-width:1px" onclick="document.getElementById('services').click()">Brow Lamination (45min | $75)</button></h4>
+                                </div><br>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            </section id="section1">
+
+
+            <br><br>
+
+
+            <section id="section5" style="margin-bottom:24px;">
+
+
+                <div class="boxshadow reveal" data-direction="left bottom" style="background-color:lavenderblush;border-radius: 11px;text-align:left; margin:0 auto; justify-self:center; padding:24px;padding-right:42px;max-width:97%;list-style-position:inside;box-shadow:0 7px 9px rgba(2,6,23,0.4);">
+                    <h2>Cancellation Policy❗</h2>
+                    <div style="font-family: 'Nunito'">
+                        <p style="margin:0">At <strong>Faithfully Lashed</strong>, I value both your time and mine. As a solo artist, every appointment is specially reserved just for you. To ensure fairness and respect for all clients, the following cancellation policy is in place:</p>
+                        <br>
+                        <p style="margin:0"><span><strong>📅 Cancellation Notice</strong></span></p><p style="margin:0"><ul>
+                        <span><li>I kindly ask for <strong>at least 24 hours notice</strong> to cancel or reschedule your appointment.</li></span>
+                        <li>Cancellations made with less than 24 hours notice will result in <strong>loss of your $25 deposit</strong>.</li>
+                        <li>Same-day cancellations or no-shows may be charged up to <strong>50% of the full service price</strong>.</li>
+                        </ul></p><p style="margin:0"><span><strong>💬 How to Cancel</strong></span></p><p style="margin:0"><ul>
+                        <li>Cancellations must be made via text or through the booking system.</li>
+                        <li>If you’re feeling sick or experiencing an emergency, please communicate with me as soon as possible. I understand life happens, but communication is key.</li>
+                        </ul></p><p style="margin:0"><span><strong>🚫 No-Show Policy</strong></span></p><p style="margin:0"><ul>
+                        <li>No-call/no-shows will result in <strong>forfeiture of your deposit</strong> and may require full prepayment for future bookings or result in being declined future services.</li>
+                        </ul></p><p style="margin:0"><span><em>*No guests or extra company during service</em><br>
+                        </span></p><p style="margin:0"><span>By booking your appointment, you agree to this cancellation policy. Thank you for respecting my time and supporting my small business 💕</span>
+                    </div>
+                    <br>
+                </div>
+
+
+            </section id="section5">
+
+
+            <section id="hiddensection">
+                {% include 'forms.html' %}
+            </section id="hiddensection">
+
+
+        </main>
+
+
+        {% include 'footer.html' %}
+
+
+    </body>
+
+
+</html>

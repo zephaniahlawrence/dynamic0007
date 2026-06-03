@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <script src="{{ url_for('static', filename='js/updatecartscript.js') }}" defer></script>
+    </head>
+
+    <body>
+        <!-- {{ services[0] }} -->
+        <h1>Services</h1>
+            <form id="serviceidform" name="serviceidform" action="/updatecart" method="post">
+
+                <button id="serviceid" name="serviceid" value="{{ services[0].id }}" type="submit" class="buttonhover" style="width:100%;color:pink; border:2px solid #B76E79; border-radius:9px; padding:9px;">
+                    {{ services[0].name }} ({{ services[0].time }}hr | ${{ services[0].price }} {{ services[0].note }})
+                </button>
+
+                <button id="serviceid2" name="serviceid2" value="{{ services[1].id }}" type="submit" class="buttonhover" style="width:100%;color:pink; border:2px solid #B76E79; border-radius:9px; padding:9px;">
+                    {{ services[1].name }} ({{ services[1].time }}hr | ${{ services[1].price }} {{ services[1].note }})
+                </button>
+
+                <button id="serviceid3" name="serviceid3" value="{{ services[2].id }}" type="submit" class="buttonhover" style="width:100%;color:pink; border:2px solid #B76E79; border-radius:9px; padding:9px;">
+                    {{ services[2].name }} ({{ services[2].time }}hr | ${{ services[2].price }} {{ services[2].note }})
+                </button>
+
+                <button id="serviceid4" name="serviceid4" value="{{ services[3].id }}" type="submit" class="buttonhover" style="width:100%;color:pink; border:2px solid #B76E79; border-radius:9px; padding:9px;">
+                    {{ services[3].name }} ({{ services[3].time }}hr | ${{ services[3].price }} {{ services[3].note }})
+                </button>
+
+                <button id="serviceid5" name="serviceid5" value="{{ services[4].id }}" type="submit" class="buttonhover" style="width:100%;color:pink; border:2px solid #B76E79; border-radius:9px; padding:9px;">
+                    {{ services[4].name }} ({{ services[4].time }}hr | ${{ services[4].price }}) {{ services[4].note }}
+                </button>
+
+            </form>
+
+
+        <h1>Your Cart</h1>
+        <table>
+        {% for item in cartitems %}
+            <tr>
+            <td>{{ item.name }}</td>
+            <td>{{ item.quantity }} x ${{ item.price }}</td>
+            <td>Subtotal: ${{ item.subtotal }}</td>
+            </tr>
+        {% endfor %}
+        </table>
+        <h3></h3>
+        <h3 id="pricetotal" name="pricetotal">Total: $</h3>
+        <a href="{{ url_for('index') }}">Continue Shopping</a>
+        <a href="{{ url_for('clear_cart') }}">Empty Cart</a>
+    </body>
+
+</html>
